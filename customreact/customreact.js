@@ -1,22 +1,31 @@
-function customrender(reactelement,container){
-
-    const domElement = document.createElement(reactelement.type)
-
-    domElement.innerHTML  = reactelement.children
-    domElement.setAttribute('href', reactelement.props.href)
-    domElement.setAttribute('target',reactelement.props.target)
+function customRender(reactElement, container){
+    /*
+    const domElement = document.createElement(reactElement.type)
+    domElement.innerHTML = reactElement.children
+    domElement.setAttribute('href', reactElement.props.href)
+    domElement.setAttribute('target', reactElement.props.target)
 
     container.appendChild(domElement)
+    */
+
+    const domElement = document.createElement(reactElement.type)
+    domElement.innerHTML = reactElement.children
+    for (const prop in reactElement.props) {
+        if (prop === 'children') continue;
+        domElement.setAttribute(prop, reactElement.props[prop])
+    }
+    container.appendChild(domElement)
 }
-const reactelement = {
-    type:'a',
-    props:{
-        href:'https://harshitbagga.github.io',
-        target:'_blank'
+
+const reactElement = {
+    type: 'a',
+    props: {
+        href: 'https://harshitbagga.github.io',
+        target: '_blank'
     },
-    children: 'Click me to visit the profile'
-} 
-const maincontainer  = document.querySelector('#root')
+    children: 'Click here to visit profile'
+}
 
+const mainContainer = document.querySelector('#root')
 
-customrender(reactelement, maincontainer)
+customRender(reactElement, mainContainer)
