@@ -15,6 +15,11 @@ function App() {
     } 
     else{
       setCounter(counter + 1)
+     // For Interview 
+     //if we want to add setCounter(counter + 1) multiple times
+     //we can write setCounter((prevCounter => prevCounter + 1 )) 
+     //here prevCounter is a callback function and multiple setCounter is considered as one batch
+     //coz its just variable  
       console.log("Value added",counter);
     }
     
