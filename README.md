@@ -1,6 +1,6 @@
 # Antarya Interiors
 
-![Antarya Interiors](https://lovable.dev/opengraph-image-p98pqg.png)
+![Antarya Interiors][https://lovable.dev/opengraph-image-p98pqg.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.justdial.com%2FSurat%2FAntarya-Interiors-Anand-Mahal-Road%2F0261PX261-X261-190204193427-I3I9_BZDET&psig=AOvVaw1Q_MAROcTJD7JiyflfCN_V&ust=1744033805224000&source=images&cd=vfe&opi=89978449&ved=0CBUQjhxqFwoTCMjXkrzGw4wDFQAAAAAdAAAAABAE)
 
 A beautiful, responsive website for Antarya Interiors - an interior design agency offering various design services including free consultations, blueprint designs, and complete interior design solutions.
 
